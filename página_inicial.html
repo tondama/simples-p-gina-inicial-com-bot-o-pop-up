@@ -1,0 +1,103 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Simples &middot; Página inicial</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- CSS -->
+    <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link href="bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="estilo.css" rel="stylesheet">
+
+  <body>
+
+    <!-- Part 1: Esta é a parte do menu -->
+
+        <nav>
+  <div class="nav-left">
+    <img src="img/logotipo.gif" class="logo">
+    <ul>
+      <li style=" border-bottom: 0.2px solid #000;">Início</li>
+      <li>Projetos</li>
+      <li>Sobre</li>
+    </ul>
+  </div>
+  <div class="nav-right">
+    <div  class="pesquisar">
+    <input type="text" placeholder="O que está procurando?">     
+         <img src="img/search.png">
+</div>
+    
+    <div class="fotoperfil online">
+      <img src="img/alex.jpg">
+    </div>
+    <div class="points">
+  <label><img img src="img/pontos1.gif" onclick="abrir_menu()" class="dropbtn"></label>
+    </div>
+        </nav>          
+
+
+
+<div id="menu_define">
+<br>
+<div class="menbord">
+  <button onclick="fechar_menu()" id="btn_fecha">&times; Fechar o menu</button>
+</div>
+
+<div id="conteudo_menu">
+    <div class="fotoperfil">
+      <img src="img/alex.jpg">
+    </div>
+
+<p class="text-info" style="font-size: 19px;">Lelson António</p>
+<p style="font-size: 16px; margin-top: -4%;">Activo agora</p>
+    <hr style="border: 0.5px solid #c3c3c3;"> 
+
+<a href="">Sair do site</a>
+</div>
+
+
+  </div>
+
+
+
+    <!-- Part 2: Esta é a parede -->
+
+    <div id="parede">
+      <!-- Conteudo -->
+      <div class="container">
+
+<p class="lead">Uma simples página inicial com botão pop up feita com HTML, CSS, bootstrap e Javascript.</p>   
+ 
+      </div>
+
+      <div id="push"></div>
+    </div>
+
+    <div id="footer">
+      <div class="container">
+        <p class="rodapee">Página inicial <a href="http://martinbean.co.uk">Manuel Tondama</a> O <a href="http://ryanfait.com/sticky-footer/">Web developer</a>.</p>
+      </div>
+    </div>
+
+
+
+    <!-- o javascript
+    ================================================== -->
+<script>
+function abrir_menu() {
+  document.getElementById("menu_define").style.display = "block";
+}
+
+function fechar_menu() {
+  document.getElementById("menu_define").style.display = "none";
+}
+</script>
+
+
+  </body>
+</html>
